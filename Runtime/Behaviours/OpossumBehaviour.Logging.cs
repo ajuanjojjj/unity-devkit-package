@@ -9,43 +9,6 @@ using UnityObject = UnityEngine.Object;
 
 
 
-namespace PossumScream.Behaviours
-{
-	public abstract partial class OpossumBehaviour
-	{
-		[SerializeField] private bool _logging = true;
-
-
-
-
-		#region Publics
-
-
-			protected bool Log(string message = "")
-			{
-				return Log(message, this);
-			}
-
-			protected bool Log(string message, UnityObject context)
-			{
-				return LogInfo(message, context);
-			}
-
-
-
-
-			protected bool Info(string message = "")
-			{
-				return LogInfo(message, this);
-			}
-
-			protected bool LogInfo(string message = "")
-			{
-				return LogInfo(message, this);
-			}
-
-			protected bool LogInfo(string message, UnityObject context)
-			{
 				if (!this._logging) return false;
 				HLogger.LogInfo(message, context);
 				return true;
