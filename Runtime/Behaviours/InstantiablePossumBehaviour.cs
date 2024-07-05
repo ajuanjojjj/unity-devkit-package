@@ -6,7 +6,7 @@ using UnityEngine;
 namespace PossumScream.Behaviours
 {
 	[DisallowMultipleComponent]
-	public abstract class InstantiablePossumBehaviour<T> : PossumBehaviour where T : Component
+	public abstract class adsasdInstantiablePossumBehaviour<T> : PossumBehaviour where T : Component
 	{
 		internal static T _instance = null;
 
